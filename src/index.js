@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 Amplify.configure(config)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const basename = process.env.NODE_ENV === 'development' ? '/' : '/<YOUR_REPOSITORY_NAME>/';
+const basename = process.env.NODE_ENV === 'development' ? '/' : '/amplifyReactApp/';
 root.render(
   <BrowserRouter basename={basename}>
     <App />
