@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { API } from 'aws-amplify'
 import './App.css';
+import Typography from '@mui/material/Typography';
 
 
 
@@ -25,7 +26,9 @@ function GitHubBornOn() {
         fetchDate()
       }, [])
     return (
-        <h2>{loading ? "GitHub Data Loading..." : bornDate}</h2>
+        <Typography variant="h4">
+        {loading ? "GitHub Data Loading..." : bornDate}
+        </Typography>
       );
 }
 
